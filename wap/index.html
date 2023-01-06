@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<title>index</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="app.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/flexible.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+	$('#main .navi .li01 > a').click(function(){
+		$(this).parent().toggleClass('on');
+		return false;
+	});
+	$('#main .navi .li04 > a').click(function(){
+		$(this).parent().toggleClass('on').siblings('li').removeClass('on');
+		return false;
+	});	
+});
+</script>
+</head>
+<body>
+<div id="container">
+	<div class="header">
+		<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	</div>
+	<div id="main">
+		<div class="photo"><img src="images/photo.jpg" alt=""><a href="#"><img src="images/img01.png" alt=""></a></div>
+		<ul class="navi clearfix">
+			<li class="li01"><a class="bottom-border" href="index.html"><span class="img"><img src="images/img02.png" alt=""></span><span class="txt"><span>进入官网</span></span></a>
+				<div class="jsBox"><img class="arrow" src="images/arrow.png" alt="">
+					<ul class="ulList">
+						<li><span class="ms" id="lineMs0">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com" target="_blank">立即进入</a></li>
+						<li><span class="ms" id="lineMs1">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com/" target="_blank">立即进入</a></li>
+						<li><span class="ms" id="lineMs2">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com/" target="_blank">立即进入</a></li>
+						<li><span class="ms" id="lineMs3">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com/" target="_blank">立即进入</a></li>
+						<li><span class="ms" id="lineMs4">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com/" target="_blank">立即进入</a></li>
+						<li><span class="ms" id="lineMs5">检测中</span><img src="images/icon.png" alt=""><span class="url">www.20171111.com</span><a href="https://www.20171111.com/" target="_blank">立即进入</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li02">
+				<a class="bottom-border" href="#">
+					<span class="img"><img src="images/img06.png" alt=""></span>
+					<span class="txt"><span>推广赚钱</span></span>
+				</a>
+				<!-- <div class="jsBox02"><img class="arrow" src="images/arrow.png" alt="">
+					<ul class="list">
+						<li><a href="#"><img src="images/navi01.png" alt="">优惠办理大厅</a></li>
+						<li><a href="#"><img src="images/navi02.png" alt="">天天刮刮乐</a></li>
+						<li><a href="#"><img src="images/navi03.png" alt="">幸运转大奖</a></li>
+						<li><a href="#"><img src="images/navi04.png" alt="">幸运摇钱树</a></li>
+						<li><a href="#"><img src="images/navi05.png" alt="">2021牛气冲天</a></li>
+						<li><a href="#"><img src="images/navi06.png" alt="">疯狂点红包</a></li>
+					</ul>
+				</div> -->
+			</li>
+			<li class="li03">
+				<a href="#">
+					<span class="img">
+						<img src="images/img03.png" alt="">
+					</span>
+					<span class="txt"><span>APP下载</span></span>
+				</a>
+			</li>
+			<li class="li04">
+				<a href="#">
+					<span class="img">
+						<img src="images/img04.png" alt="">
+					</span>
+					<span class="txt"><span>浏览器推荐</span></span>
+				</a>
+				<div class="jsBox02"><img class="arrow" src="images/arrow.png" alt="">
+					<ul class="list">
+						<li>
+							<a href="https://www.google.cn/intl/zh-CN/chrome" style="display: flex;">
+								<img src="images/navi01-chrome.png" alt="">
+								<div >
+									谷歌浏览器 <br>
+									<img src="images/hot.gif" alt="" style="width: 46px;">
+								</div>
+							</a>
+						</li>
+						<li><a href="https://ub11.net"><img src="images/navi02-u.png" alt="">寰宇浏览器</a></li>
+						<li><a href="https://www.microsoft.com/zh-cn/edge/home?ch&form=MA13FJ#evergreen"><img src="images/navi02-edge.png" alt="">微软Edge</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li05">
+				<a href="#">
+					<span class="img">
+						<img src="images/img05.png" alt="">
+					</span>
+					<span class="txt"><span>在线客服</span></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer"><p>COPYRIGHT © 银河集团 版权所有 RESERVED</p></div>
+</div>
+<script src="js/ms.js"></script>
+</body>
+</html>

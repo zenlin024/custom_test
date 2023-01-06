@@ -1,0 +1,227 @@
+
+body{
+	font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;margin:0 auto;
+}
+#container {
+	margin: 0 auto;
+	max-width: 750px;
+}
+img {
+	vertical-align: top;
+	width: 100%;
+}
+.header {
+	padding: 0.24rem 0;
+	background: #000;
+}
+.header .logo {
+	margin: 0 auto;
+	width: 3.3rem;
+}
+#main .photo {
+	position: relative;
+}
+#main .photo a {
+	margin-left: -2.56rem;
+	width: 5.12rem;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0.98rem;
+}
+#main .navi {
+	margin: 0.2rem;
+	position: relative;
+	border: 1px solid #DCDCDC;
+}
+#main .navi > li {
+	width: 33.33%;
+	float: left;
+}
+#main .navi > li.li01,
+#main .navi > li.li02 {
+	width: 50%;
+}
+#main .navi > li.li02 {
+	position: relative;
+}
+#main .navi > li > a {
+	padding: 0.76rem 0 0;
+	height: 2.58rem;
+	overflow: hidden;
+	zoom: 1;
+	color: #323232;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+	border-right: 1px solid #DCDCDC;
+	background: #fff;
+}
+#main .navi > li.on > a {
+	background: #A37C3C;
+}
+#main .navi > li > a .img {
+	margin: 0.1rem 0 0.12rem;
+	display: block;
+	display: block;
+}
+#main .navi > li > a .img img {
+	margin: 0 auto;
+	width: auto;
+	height: 0.4rem;
+	display: block;
+}
+#main .navi > li.on > a .img {
+	background: url(../images/img02_on.png) no-repeat center top;
+	background-size: auto 100%;
+}
+#main .navi > .li02.on > a .img {
+	background: url(../images/img06_on.png) no-repeat center top;
+	background-size: auto 100%;
+}
+#main .navi > li.on > a .img img {
+	visibility: hidden;
+}
+#main .navi > li > a .txt {
+	display: block;
+	font-size: 0.22rem;
+	white-space: nowrap;
+}
+#main .navi > li > a .txt span {
+	margin-bottom: 0.08rem;
+	display: block;
+	color: #323232;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+#main .navi > li.on > a .txt,
+#main .navi > li.on > a .txt span {
+	color: #fff;
+}
+#main .navi > li.li02 > a,
+/* #main .navi > li.li01 > a {
+	border-bottom: 1px solid #DCDCDC;
+} */
+
+.bottom-border{
+	border-bottom: solid 1px#DCDCDC;
+}
+
+#main .navi > li.li02 > a,
+#main .navi > li.li05 > a {
+	border-right: none;
+}
+#main .navi > li .jsBox {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -0.22rem;
+	display: none;
+	box-sizing: border-box;
+	border: 1px solid #A37C3C;
+	background: rgba(255,255,255,0.95);
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+#main .navi > li.on .jsBox {
+	display: block;
+}
+#main .navi > li .jsBox ul {
+	padding: 0.43rem 0.4rem 0.13rem;
+}
+#main .navi > li .jsBox li {
+	margin-bottom: 0.25rem;
+	overflow: hidden;
+	zoom: 1;
+}
+#main .navi > li .jsBox li span {
+	display: block;
+	float: left;
+	color: #313131;
+	font-size: 0.3rem;
+	line-height: 0.7rem;
+	text-align: center;
+	border: 1px solid #C8C8C8;
+	background: #F0F0F0;
+	box-sizing: border-box;
+}
+#main .navi > li .jsBox li .ms {
+	width: 1.1rem;
+}
+#main .navi > li .jsBox li img {
+	margin: 0.25rem 0.28rem 0 0.38rem;
+	width: 0.45rem;
+	display: block;
+	float: left;
+}
+#main .navi > li .jsBox li .url {
+	width: 4.14rem;
+}
+#main .navi > li .jsBox li a {
+	width: 2.15rem;
+	display: block;
+	float: right;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	line-height: 0.7rem;
+	text-align: center;
+	border: 1px solid #A37C3C;
+	background: #A37C3C;
+	box-sizing: border-box;
+}
+#main .navi > li .jsBox .arrow {
+	margin-left: -0.12rem;
+	width: 0.25rem;
+	position: absolute;
+	left: 25%;
+	bottom: -0.16rem;
+}
+#main .navi > li .jsBox02 {
+	width: 33.33%;
+	position: absolute;
+	top: 2.5rem;
+	display: none;
+	box-sizing: border-box;
+	border: 1px solid #84432E;
+	background: rgba(255,255,255,1);
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+#main .navi > li.on .jsBox02 {
+	display: block;
+}
+#main .navi > li .jsBox02 ul {
+	padding: 0.2rem 0rem 0.6rem 0.2rem;
+}
+#main .navi > li .jsBox02 li {
+	margin-top: 0.35rem;
+}
+#main .navi > li .jsBox02 li a {
+	color: #323232;
+	font-size: 13px;
+}
+#main .navi > li .jsBox02 li a img {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: -0.02rem 0.2rem 0 0;
+	vertical-align: middle;
+}
+#main .navi > li .jsBox02 .arrow {
+	margin-left: -0.12rem;
+	width: 0.22rem;
+	position: absolute;
+	left: 50%;
+	bottom: -0.12rem;
+}
+.footer {
+	overflow: hidden;
+	background: #000;
+}
+.footer p {
+	color: #fff;
+	font-size: 0.25rem;
+	line-height: 0.76rem;
+	text-align: center;
+}
