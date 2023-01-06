@@ -226,3 +226,12 @@ img {
 	line-height: 0.76rem;
 	text-align: center;
 }
+
+/* .li03, .li04, .li05 {
+	border-top: solid 1px red;
+} */
+
+.li01, .li02 {
+	border-bottom: solid 1px red;
+}
+
