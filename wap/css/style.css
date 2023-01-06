@@ -227,9 +227,9 @@ img {
 	text-align: center;
 }
 
-/* .li03, .li04, .li05 {
-	border-top: solid 1px red;
-} */
+.li03, .li04, .li05 {
+	border-top: solid 1px #DCDCDC;
+}
 
 li.li01, li.li022 {
     border-bottom: 1px solid #DCDCDC;
