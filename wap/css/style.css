@@ -39,7 +39,7 @@ img {
 	float: left;
 }
 #main .navi > li.li01,
-#main .navi > li.li02 {
+#main .navi > li.li022 {
 	width: 50%;
 }
 #main .navi > li.li02 {
@@ -231,7 +231,11 @@ img {
 	border-top: solid 1px red;
 } */
 
-.li01, .li02 {
-	border-bottom: solid 1px red;
+li.li01, li.li022 {
+    border-bottom: 1px solid red;
+}
+
+li.li022{
+	width: 50%;
 }
 
