@@ -98,14 +98,15 @@ img {
 #main .navi > li.on > a .txt span {
 	color: #fff;
 }
-#main .navi > li.li02 > a,
-/* #main .navi > li.li01 > a {
+
+/* #main .navi > li.li02 > a,
+#main .navi > li.li01 > a {
 	border-bottom: 1px solid #DCDCDC;
 } */
 
-/* .bottom-border{
+.bottom-border{
 	border-bottom: solid 1px#DCDCDC;
-} */
+}
 
 #main .navi > li.li02 > a,
 #main .navi > li.li05 > a {
