@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <title>銀河爆奖查询頁</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+  <!-- --------------- 頂部欄 start ------------->
+  <div class="header">
+    <div class="header_main">
+      <div class="container">
+        <h1><img src="images/logo.png" alt=""></h1>
+        <div class="menu">
+          <ul class="menu_main">
+            <li class="menu01">
+              <a href="#" id="bt01" class="a-icon home">
+                <div class="menu-icon home"></div>
+                <span>官方首页</span>
+              </a>
+            </li>
+            <li class="menu02">
+              <a href="#" class="a-icon money">
+                <div class="menu-icon money"></div>
+                <span>推广赚钱</span> 
+              </a>
+            </li>
+            <li class="menu03">
+              <a href="#" class="a-icon app">
+                <div class="menu-icon app"></div>
+                <span>APP下载</span> 
+              </a>
+            </li>
+            <li class="menu04">
+              <a href="#" class="a-icon cs"> 
+                <div class="menu-icon cs"></div>
+                <span>在线客服</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機menu -->
+  <div class="menu2">
+    <nav class="menu_top">
+      <div class="menu_top-img"><img src="images/logo_wap.png"alt=""></div>
+      <!-- <ul>
+        <li>
+          <a class="login_btn" href="#" target="_blank">登录</a>
+          <a class="register_btn" href="#" target="_blank">注册</a>
+        </li>
+        </li>
+        <li class="web_btn"><a href="#" class="m_a" target="_blank">皇冠官网</a></li>
+        <li class="service_btn"><a href="#" class="m_b" target="_blank">在线客服</a></li>
+      </ul> -->
+    </nav>
+    <!-- <ul class="menu_main">
+              <li class="menu00"><img src="./images/companyLogo.png" alt=""></li>
+              <li class="menu01"><a href="index.html">球王排行榜</a></li>
+              <li class="menu02"><a href="bonus.html">争霸赛赛程<span>｜</span>獎金</a></li>
+              <li class="menu03"><a href="europe.html">2022世界杯赛程</a></li>
+              <li class="menu04"><a href="americas.html">2022世界杯直播</a></li>
+          </ul> -->
+  </div>
+  <!-- 手機版直播按鈕 -->
+  <div class="live">
+    <a href="#" target="_blank">
+      <img src="images/live.png" alt="">
+    </a>
+  </div>
+  <!-- --------------- 頂部欄 end -------------->
+
+  <div class="banner" id="banner-bottom">
+    <div class="banner_bg">
+      <!-- <img src="./images/main-banner.jpg" alt=""> -->
+    </div>
+  </div>
+  <div class="main rank" id="rank">
+    <div class="container">
+      <!-- <h2></h2> -->
+      <div class="search-bg">
+        <!--<span>排行榜查询</span>-->
+        <div class="search">
+          <!-- <div class="txt"><img src="images/searchm_txt.png" alt=""></div> -->
+          <input type="text" id="search" placeholder="请输入会员账号" class="">
+          <div class="searchbtn"><a id="show-panel" href="#">立即查询</a></div>
+        </div>
+      </div>
+
+      <!-- 獎池 -->
+      <div class="prize-pool-wrap">
+        <div class="prize-pool-section" >
+          <div class="section-title">
+            <img src="images/prize-pool-title.png" alt="">
+          </div>
+          <div class="penguin-deco">
+            <img src="images/penguin.png" alt="">
+          </div>
+          <div class="prize-pool-g">
+            <div class="prize-pool pg">
+              <div class="pg-pool-bg">
+                <img src="images/pg-pool.png" alt="">
+                <!-- <input class="pool-input-text" type="text" name="" id="" value="￥888,888,888"> -->
+                <div class="pg-pool-text">
+                  <p>￥888,888,888</p>
+                </div>
+              </div>
+            </div>
+            <div class="prize-pool galaxy">
+              <div class="galaxy-pool-bg">
+                <img src="images/galaxy-pool.png" alt="">
+                <!-- <input class="pool-input-text" type="text" name="" id="" value="￥999,999,999"> -->
+                <div class="pg-pool-text galaxy">
+                  <p>￥999,999,999</p>
+                </div>
+              </div>
+            </div>
+            <div class="prize-pool wg">
+              <div class="wg-pool-bg">
+                <img src="images/wg-pool.png" alt="">
+                <!-- <input class="pool-input-text" type="text" name="" id="" value="￥777,777,777"> -->
+                <div class="pg-pool-text">
+                  <p>￥777,777,777</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prize-text-g">
+            <div class="prize-text-img">
+              <img src="images/game-icon01.png" alt="">
+            </div>
+            <div class="prize-text">
+              <p>只要您投注，就会有机会，下一个幸运儿就是您，我们期待彩池榜单上有您的荣耀战绩！</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 爆獎日期 -->
+      <div class="prize-pool-wrap">
+        <div class="prize-pool-section history">
+          <div class="section-title">
+            <img src="images/history-title.png" alt="">
+          </div>
+          <div class="shooter">
+            <img src="images/shooter.png" alt="">
+          </div>
+          <div class="tab-section">
+            <div class="tab">
+              <ul class="tab-menu">
+                <li data-li="1" class="rt01 tab-active ">
+                  <!-- <img src="images/rank_win01.png" alt="">日赛 -->
+                </li>
+                <li data-li="3" class="rt01 sp rt02">
+                  <!-- <img src="images/rank_win03.png" alt="">总决赛 -->
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!----- 日赛排行榜 ----->
+                <div class="tab-panel" style="display: block;">
+                  <div class="rank_info">
+                    <div class="select-bg">
+                      <span class="rs">爆奖日期</span>
+                      <span class="select">
+                        <select data-type="1">
+                          <option value="1" selected="">2023/03/01</option>
+                          <option value="1" >2023/03/02</option>
+                          <option value="1" >2023/03/03</option>
+                        </select>
+                      </span>
+                    </div>
+                    <div class="txt">大奖榜单表每日10:00更新，排名不分先后。</div>
+                    <!-- <div class="txtm">日赛排名统计2022-11-21至12-18<br>奖金表每日12:00:00公布</div> -->
+                  </div>
+                  <div class="ranking_date" >
+                    <div class="table">
+                      <div class="tr">
+                        <div class="th ranking One">排名</div>
+                        <div class="th ranking">会员账号</div>
+                        <div class="th ranking">游戏平台</div>
+                        <div class="th ranking">游戏名称</div>
+                        <div class="th ranking">投注金额(¥)</div>
+                        <div class="th ranking">派彩金额(¥)</div>
+                        <div class="th ranking">投注时间</div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One"><img src="images/1.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One"><img src="images/2.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One"><img src="images/3.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">4</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">5</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">6</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">7</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">8</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">9</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">10</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">11</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">12</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">13</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">14</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">15</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">16</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">17</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">18</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">19</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking One">20</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prize-text-g ">
+                      <div class="prize-text ">
+                        <div class="txt">
+                          <p class="history">以上中奖记录仅为部分展示，并未完全显示中奖榜单，如您有爆大奖记录，欢迎随时联系澳门银河集团 7×24小时在线客服 ，提供您爆大奖的注单号码，我们会为您的记录您在澳门银河集团电子爆大奖榜单上的荣耀战绩 !</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----- 周赛排行榜 ----->
+                <div class="tab-panel">
+                  <div class="rank_info">
+                    <div class="select-bg">
+                      <span class="rs">周赛场次</span>
+                      <span class="select">
+                        <select data-type="1">
+                          <option value="1" selected="">2022年11月21日~11月27日</option>
+                          <option value="1">2022年11月28日~12月04日</option>
+                          <option value="1">2022年12月05日~12月11日</option>
+                          <option value="1">2022年12月12日~12月18日</option>
+                        </select>
+                      </span>
+                    </div>
+                    <div class="txt">周赛排名统计2022-11-21至12-18 奖金表每周一12:00:00公布</div>
+                    <div class="txtm">周赛排名统计2022-11-21至12-18<br>奖金表每周一12:00:00公布</div>
+                  </div>
+                  <div class="ranking_date">
+                    <div class="table">
+                      <div class="tr">
+                        <div class="th ranking">排名</div>
+                        <div class="th member">会员账号</div>
+                        <div class="th bet">周期有效投注</div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking"><img src="images/1.png" alt=""></div>
+                        <div class="td member">198***</div>
+                        <div class="td bet">20,998</div>
+                      </div>
+                    </div>
+                    <div class="txt">若会员有效投注一致，将按照优先达到该有效投注会员优先排名。</div>
+                  </div>
+                </div>
+                <!----- 总决赛排行榜 ----->
+                <div class="tab-panel">
+                  <div class="rank_info">
+                    <div class="select-bg">
+                      <span class="rs all">爆奖日期</span>
+                      <span class="select">
+                        <select data-type="1">
+                          <option value="1" selected="">2023/04/01</option>
+                          <option value="1" >2023/04/02</option>
+                          <option value="1" >2023/04/03</option>
+                        </select>
+                      </span>
+                    </div>
+                    <div class="txt">大奖榜单表每日10:00更新，排名不分先后。
+                    </div>
+                    <!-- <div class="txtm">总决赛排名统计2022-11-21至12-18<br>奖金表12-19 12:00:00公布</div> -->
+                  </div>
+                  <div class="ranking_date">
+                    <div class="table">
+                      <div class="tr">
+                        <div class="th ranking">排名</div>
+                        <div class="th ranking">会员账号</div>
+                        <div class="th ranking">游戏平台</div>
+                        <div class="th ranking">游戏名称</div>
+                        <div class="th ranking">投注金额(¥)</div>
+                        <div class="th ranking">派彩金额(¥)</div>
+                        <div class="th ranking">投注时间</div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking"><img src="images/1.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking"><img src="images/2.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking"><img src="images/3.png" alt=""></div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking">4</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking">5</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td ranking">6</div>
+                        <div class="td ranking">YH2023</div>
+                        <div class="td ranking">PG</div>
+                        <div class="td ranking">麻将胡了</div>
+                        <div class="td ranking">100</div>
+                        <div class="td ranking">10,000</div>
+                        <div class="td ranking">
+                          2023-2-24 12:00:00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prize-text-g ">
+                      <div class="prize-text ">
+                        <div class="txt history">
+                          <p class="history">以上中奖记录仅为部分展示，并未完全显示中奖榜单，如您有爆大奖记录，欢迎随时联系澳门银河集团 7×24小时在线客服 ，提供您爆大奖的注单号码，我们会为您的记录您在澳门银河集团电子爆大奖榜单上的荣耀战绩 !</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="txt">若会员有效投注一致，将按照优先达到该有效投注会员优先排名。</div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="prize-text-g">
+            <div class="prize-text">
+              <p>只要您投注，就会有机会，下一个幸运儿就是您，我们期待彩池榜单上有您的荣耀战绩！</p>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- go top -->
+  <!-- <div class="gotop" style="display: block;">
+    <a href="javascript:;">
+      <img src="images/gotop.png" alt="">
+    </a>
+  </div> -->
+
+  <div class="footer">
+    COPYRIGHT © 澳門銀河集團2023.com 版权所有
+  </div>
+  <ul class="menu_main2">
+    <!-- <li class="menu00"><img src="./images/companyLogo.png" alt=""></li> -->
+    <!-- <li class="menu01"><a class="active" href="#">球王排行榜</a></li> -->
+    <li class="menu01 homew">
+      <a href="#" class="a-iconw">
+        <img class="icon-homew" src="images/icon-home_50.png" alt="">
+        <span>官方首页</span> 
+      </a>
+    </li>
+    <li class="menu01 moneyw">
+      <a href="#" class="a-iconw">
+        <img class="icon-money" src="images/icon-money_50.png" alt="">
+        <span>推广赚钱</span> 
+      </a>
+    </li>
+    <li class="menu01 appw">
+      <a href="#" class="a-iconw">
+        <img class="icon-app" src="images/icon-app_50.png" alt="">
+        <span>APP下载</span> 
+      </a>
+    </li>
+    <li class="menu01 csw">
+      <a href="#" class="a-iconw">
+        <img class="icon-cs" src="images/icon-online-cs_50.png" alt="">
+        <span>在线客服</span> 
+      </a>
+    </li>
+  </ul>
+  <!-- 查詢彈窗 -->
+  <div id="lightbox-1" class="white_content" style="display:none;">
+    <div class="cxbox">
+      <div class="cxbox_bt">
+        <p>查询中心</p>
+        <a id="lightbox-1_close-panel" href="#">
+          <img src="images/close.png" alt="">
+        </a>
+      </div>
+      <div class="cxbox_bd" style="color: rgb(255, 230, 129);">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr class="ad">
+              <th>会员帐号</td>
+              <th>有效投注</td>
+              <th>总排名</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <tbody id="query_content">
+            <tr style="display: none;">
+              <td colspan="3">查无资料</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="quotes">
+          <div id="pages">
+            <span style="color:#313131;background-color: #f8efef;">共 1 条</span>
+            <span style="color:#fff;background-color: #b13939;">1</span>
+            <span style="color:#313131;">下一页</span>
+          </div>
+        </div>
+        <!-- <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr class="ad">
+              <th>会员帐号</td>
+              <th>有效投注</td>
+              <th>排名</td>
+              <th>年排行</td>
+            </tr>
+            <tr>
+              <td>1351185</td>
+              <td>43461.00</td>
+              <td>未进入排名</td>
+              <td>年47萬</td>
+            </tr>
+          </tbody>
+          <tbody id="query_content">
+            <tr style="display: none;">
+              <td colspan="3">查无资料</td>
+            </tr>
+          </tbody>
+        </table> -->
+        <!-- <div class="quotes">
+          <div id="pages">
+            <span style="color:#313131;background-color: #f8efef;">共 1 条</span>
+            <span style="color:#fff;background-color: #b13939;">1</span>
+            <span style="color:#313131;">下一页</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 彈窗黑BG 放最外層-->
+  <div id="lightbox-1_lightboxbg"></div>
+
+
+  <script>
+    var currTab = 0;
+    $('.tab li:first').addClass('tab-active');
+    $('.tab .tab-panel:first').show();
+    $('ul.tab-menu li').click(function () {
+      $('ul.tab-menu li').removeClass('tab-active');
+      $('.tab .tab-panel').hide();
+      $(this).addClass('tab-active');
+      currTab = $(this).attr('data-li') - 1;
+      $('.tab .tab-panel:eq(' + currTab + ')').show();
+    })
+
+  </script>
+
+  <!-- --------------- 錨點滑動 -------------->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.extend({
+        'goAnchor': function (to, time) {
+          $obj = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+          $($obj).animate({
+            scrollTop: to
+          }, time);
+        }
+      });
+
+      $('#bt01').click(function () {
+        $.goAnchor($('#rank').offset().top - 100, 1000);
+      });
+    });
+  </script>
+  <!-- --------------- 回最上 -------------->
+  <script>
+    $(document).ready(function () {
+      $(".gotop").hide();
+      //gotop
+      $('.gotop').click(function () {
+        $('html,body').animate({ scrollTop: '0px' }, 800);
+      });
+      //高度200 gotop出現
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+          $(".gotop").fadeIn();
+        } else {
+          $(".gotop").fadeOut();
+        }
+      });
+    });
+  </script>
+  <!-- --------------- 彈窗 -------------->
+  <script>
+    //彈窗置中程式
+    (function ($) {
+      $.fn.extend({
+        center: function (options) {
+          var options = $.extend({ // Default values
+            inside: window, // element, center into window
+            transition: 0, // millisecond, transition time
+            minX: 0, // pixel, minimum left element value
+            minY: 0, // pixel, minimum top element value
+            withScrolling: false, // booleen, take care of the scrollbar (scrollTop)
+            vertical: true, // booleen, center vertical
+            horizontal: true // booleen, center horizontal
+          }, options);
+          return this.each(function () {
+            var props = {
+              position: 'fixed'
+            };
+            if (options.vertical) {
+              var top = ($(options.inside).height() - $(this).outerHeight()) / 2;
+              if (options.withScrolling) top += $(options.inside).scrollTop() || 0;
+              top = (top > options.minY ? top : options.minY);
+              $.extend(props, {
+                top: top + 'px'
+              });
+            }
+            if (options.horizontal) {
+              var left = ($(options.inside).width() - $(this).outerWidth()) / 2;
+              if (options.withScrolling) left += $(options.inside).scrollLeft() || 0;
+              left = (left > options.minX ? left : options.minX);
+              $.extend(props, {
+                left: left + 'px'
+              });
+            }
+            if (options.transition > 0) $(this).animate(props, options.transition);
+            else $(this).css(props);
+            return $(this);
+          });
+        }
+      });
+    })(jQuery);
+
+    //彈窗觸發程式
+    $(document).ready(function () {
+
+      //觸發後置中
+      $("#lightbox-1").center();
+      //按鈕點擊觸發
+      $("a#show-panel").click(function () {
+        $("#lightbox-1_lightboxbg, #lightbox-1").fadeIn(300);
+        $("#lightbox-1").center();
+      });
+      //關閉鈕觸發
+      $("a#lightbox-1_close-panel,div#lightbox-1_lightboxbg").click(function () {
+        $("#lightbox-1_lightboxbg, #lightbox-1").fadeOut(300);
+      })
+
+    });
+  </script>
+
+
+
+</body>
+
+</html>
